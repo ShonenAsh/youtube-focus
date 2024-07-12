@@ -3,7 +3,15 @@
   "name": "Youtube Focus Mode",
   "version": "0.1.0",
   "action": {
-    "default_popup" : "index.js",
-    "default_icon": "favicon.png" 
-  }
+    "default_popup": "src/index.html",
+    "default_icon": "favicon.png"
+  },
+  "content_scripts" : [
+    {
+      "js" : ["src/content.js"], 
+      "matches" : [
+        "https://www.youtube.com/*"
+      ]
+    }
+  ]
 }
