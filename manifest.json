@@ -5,6 +5,5 @@
   "action": {
     "default_popup" : "index.js",
     "default_icon": "favicon.png" 
-  },
-  "permissons": ["scripting", "activeTab"]
+  }
 }
